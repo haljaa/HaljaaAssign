@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><!--aljaafar hassan S1902221-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.roadblock_detail_list.RoadBlockDetailList">
+
+    <View
+        android:id="@+id/view_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/bg_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_select_date"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/interregular"
+        android:hint="@string/searc_placeholder"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_50sdp"
+        android:textColorHint="#878E96"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"
+        app:layout_constraintEnd_toStartOf="@+id/iv_select_date"
+        app:layout_constraintStart_toStartOf="@id/view_search"
+        app:layout_constraintTop_toTopOf="@id/view_search" />
+
+    <ImageView
+        android:id="@+id/iv_select_date"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_fate"
+        app:tint="@color/purple_700"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_search"
+        app:layout_constraintBottom_toBottomOf="@+id/et_search"/>
+
+    <ImageView
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"
+        app:layout_constraintEnd_toEndOf="@id/view_search"
+        app:layout_constraintTop_toTopOf="@id/view_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_incidents_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        tools:listitem="@layout/item_road_work"
+        app:layout_constraintTop_toBottomOf="@+id/view_search"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">aljaafar_hassan_S1902221</string>
+    <string name="searc_placeholder">Search by road</string>
+    <string name="current_incidents">Current Incidents</string>
+    <string name="view_all">View all</string>
+    <string name="road_works">Road Works</string>
+    <string name="planned_road_works">Planned Road Works</string>
+    <string name="description">Description</string>
+    <string name="delay_information">Delay Information</string>
+    <string name="link">Link</string>
+    <string name="link_url"><u>http://tscot.org/04h125200430</u></string>
+</resources>

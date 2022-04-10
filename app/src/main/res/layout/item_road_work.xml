@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--aljaafar hassan S1902221-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:background="@drawable/bg_road_work_item"
+    android:paddingStart="@dimen/_13sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_13sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/intermedium"
+        android:text="A737 South of M8 - Accident"
+        android:textColor="#041222"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_calendar"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/interregular"
+        android:text="Mon, 07 Mar 2022 00:00:00 GMT"
+        android:textColor="#878E96"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_calendar"
+        app:layout_constraintStart_toEndOf="@id/iv_calendar"
+        app:layout_constraintTop_toTopOf="@id/iv_calendar" />
+
+    <ImageView
+        android:id="@+id/iv_calendar_end"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_calendar" />
+
+    <TextView
+        android:id="@+id/tv_Date_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/interregular"
+        android:text="Mon, 07 Mar 2022 00:00:00 GMT"
+        android:textColor="#878E96"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_calendar_end"
+        app:layout_constraintStart_toEndOf="@id/iv_calendar_end"
+        app:layout_constraintTop_toTopOf="@id/iv_calendar_end" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

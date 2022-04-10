@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FourioTechWorks/androidhassanassign/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/FourioTechWorks/androidhassanassign/app/src/main/res/layout/activity_road_block_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/FourioTechWorks/androidhassanassign/app/src/main/res/layout/activity_road_block_detail_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/FourioTechWorks/androidhassanassign/app/src/main/res/layout/item_road_work.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/drawable/bg_road_work_item.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/drawable/bg_search.xml" value="0.3111111111111111" />
+        <entry key="app/src/main/res/layout-land/activity_road_block_detail.xml" value="0.2515625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_road_block_detail.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_road_block_detail_list.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/badges_screen.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/date_dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_road_work.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="aljaafar_hassan_S1902221.app" />
+      </set>
+    </option>
+  </component>
+</project>

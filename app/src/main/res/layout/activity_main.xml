@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!--aljaafar hassan S1902221-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainActivity">
+
+        <TextView
+            android:id="@+id/tv_heading_incidents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/interbold"
+            android:text="@string/current_incidents"
+            android:textColor="#041222"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_view_all_incidents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/interregular"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/view_all"
+            android:textColor="#0A55A6"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/tv_heading_incidents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_heading_incidents" />
+
+        <ProgressBar
+            android:id="@+id/pb_current"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:indeterminateTint="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_view_all_incidents"
+            app:layout_constraintEnd_toEndOf="@+id/tv_view_all_incidents"
+            app:layout_constraintStart_toStartOf="@+id/tv_view_all_incidents"
+            app:layout_constraintTop_toTopOf="@+id/tv_view_all_incidents" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_incidents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_heading_incidents"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_road_work" />
+
+        <TextView
+            android:id="@+id/tv_heading_roadworks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/interbold"
+            android:text="@string/road_works"
+            android:textColor="#041222"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_incidents" />
+
+        <TextView
+            android:id="@+id/tv_view_all_road_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/interregular"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/view_all"
+            android:textColor="#0A55A6"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/tv_heading_roadworks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_heading_roadworks" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_roadworks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:indeterminateTint="@color/purple_700"
+            app:layout_constraintTop_toBottomOf="@id/tv_heading_roadworks"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_road_work" />
+
+        <ProgressBar
+            android:id="@+id/pb_roadworks"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:indeterminateTint="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_view_all_road_works"
+            app:layout_constraintEnd_toEndOf="@+id/tv_view_all_road_works"
+            app:layout_constraintStart_toStartOf="@+id/tv_view_all_road_works"
+            app:layout_constraintTop_toTopOf="@+id/tv_view_all_road_works" />
+
+        <TextView
+            android:id="@+id/tv_heading_planned_roadworks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/interbold"
+            android:text="@string/planned_road_works"
+            android:textColor="#041222"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_roadworks" />
+
+        <TextView
+            android:id="@+id/tv_view_all_road_works_planned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/interregular"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/view_all"
+            android:textColor="#0A55A6"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/tv_heading_planned_roadworks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_heading_planned_roadworks" />
+
+        <ProgressBar
+            android:id="@+id/pb_planned"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:indeterminateTint="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_view_all_road_works_planned"
+            app:layout_constraintEnd_toEndOf="@+id/tv_view_all_road_works_planned"
+            app:layout_constraintStart_toStartOf="@+id/tv_view_all_road_works_planned"
+            app:layout_constraintTop_toTopOf="@+id/tv_view_all_road_works_planned" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_planned_roadworks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_heading_planned_roadworks"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_road_work" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
